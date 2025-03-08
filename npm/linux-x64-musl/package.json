@@ -1,6 +1,6 @@
 {
   "name": "@ruc-cheese/srp-big-integer-rs-linux-x64-musl",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "os": [
     "linux"
   ],
@@ -17,5 +17,9 @@
   },
   "libc": [
     "musl"
-  ]
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@ruc-cheese/srp-big-integer-rs-win32-x64-msvc",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "os": [
     "win32"
   ],
@@ -14,5 +14,9 @@
   "license": "MIT",
   "engines": {
     "node": ">= 10"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
   }
 }
