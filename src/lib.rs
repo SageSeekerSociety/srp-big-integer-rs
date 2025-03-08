@@ -105,9 +105,10 @@ impl SRPInteger {
   #[napi(factory)]
   pub fn random_integer(bytes: u32) -> SRPInteger {
     let mut rng = thread_rng();
-    let rand_bigint = rng.gen_bigint((bytes * 8) as u64);
+    let rand_biguint = rng.gen_biguint((bytes * 8) as u64);
+    let big_int = BigInt::from(rand_biguint);
     SRPInteger {
-      value: rand_bigint,
+      value: big_int,
       hex_length: Some((bytes * 2) as usize),
     }
   }
